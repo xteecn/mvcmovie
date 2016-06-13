@@ -28,7 +28,7 @@ namespace MvcMovie.Controllers
             {
                 movies = movies.Where(s => s.Title.Contains(searchString));
             }
-            return View(movies);
+            return View(movies); 
         }
         [HttpPost]
         public ActionResult Index(string movieGenre, string searchString)
